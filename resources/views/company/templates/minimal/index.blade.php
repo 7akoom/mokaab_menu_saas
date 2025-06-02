@@ -103,6 +103,32 @@
         border-radius: 10px;
     }
 
+    .banner_part {
+        height: 880px;
+        position: relative;
+        @if(isset($banner) && $banner->image && $banner->image->path)
+            background-image: url("{{ asset('storage/' . $banner->image->path) }}");
+        @else
+            background-image: url("{{ asset('themes/minimal/img/banner.png') }}");
+        @endif
+        background-repeat: no-repeat;
+        background-size: 41%;
+        background-position: top right;
+    }
+
+    .banner_part {
+        position: relative;
+        overflow: hidden;
+    }
+
+    @media (max-width: 576px) {
+  .banner_part {
+    height: 650px;
+    background-image: none;
+    background-color: #f0eed4;
+  }
+}
+
     .border-primary{
         border-color: var(--primary-color) !important;
     }
@@ -157,13 +183,13 @@
     </header>
 
     <section class="banner_part" id="main">
-        <div class="banner-image-wrapper">
+        {{-- <div class="banner-image-wrapper">
             @if($banner && $banner->image && $banner->image->path)
                 <img src="{{ asset('storage/' . $banner->image->path) }}" alt="Banner Image" class="banner-image">
             @else
                 <img src="{{ asset('themes/minimal/img/banner.png') }}" alt="Default Banner Image" class="banner-image">
             @endif
-        </div>        
+        </div>         --}}
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">

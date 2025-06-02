@@ -2631,7 +2631,7 @@ ul {
   content: "";
   bottom: -40px;
   z-index: -1;
-  background: url(../img/klipartz.png) bottom right no-repeat;
+  /* background: url(../img/klipartz.png) bottom right no-repeat; */
   right: -10%;
   rotate: 30deg;
 }

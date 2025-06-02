@@ -9,9 +9,17 @@
     <form method="POST" action="{{ route('company.logout', ['company' => request()->route('company') ?? app('currentCompany')->domain]) }}">
         @csrf
         <button type="submit" class="btn btn-link nav-link text-body font-weight-bold px-0">
-            <i class="fa fa-user me-sm-1"></i>
             <span class="d-sm-inline d-none">تسجيل خروج</span>
         </button>
     </form>
+    <li class="nav-item d-xl-none pe-3 d-flex align-items-center">
+      <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+        <div class="sidenav-toggler-inner">
+          <i class="sidenav-toggler-line"></i>
+          <i class="sidenav-toggler-line"></i>
+          <i class="sidenav-toggler-line"></i>
+        </div>
+      </a>
+    </li>
   </div>
 </nav>
