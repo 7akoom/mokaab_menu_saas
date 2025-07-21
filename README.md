@@ -15,7 +15,7 @@ The platform is designed to help companies move away from PDF catalogs and Whats
 
 ## 🌍 Live Demo
 
-👉 [https://demo.buildify-saas.com/](https://mokaab.eu.org/)
+👉 [https://demo.mokaab_menu_saas.com/](https://mokaab.eu.org/)
 
 ---
 
@@ -67,13 +67,13 @@ The platform is designed to help companies move away from PDF catalogs and Whats
 Clone the project:
 
 ```bash
-  git clone https://github.com/7akoom/buildify.git
+  git clone https://github.com/7akoom/mokaab_menu_saas.git
 ```
 
 Navigate to project directory:
 
 ```bash
-    cd buildify
+    cd mokaab_menu_saas
 ```
 
 Install dependencies:
@@ -100,7 +100,7 @@ Start the server:
 ## 🔐 Multi-Tenancy Notes
 
 - Companies are created via super admin.
-- Each company is assigned a subdomain like: company1.buildify-saas.com
+- Each company is assigned a subdomain like: company1.mokaab.com
 - Data is isolated per company using company_id and middleware.
 
 ## 👨‍💻 About Me 
@@ -112,7 +112,7 @@ I'm Hkmt, a passionate full-stack developer specialized in Laravel and modern JS
 Buildify is my latest project to help construction supply companies digitize their catalogs and streamline their customer experience.
 
 ## 🛠 Skills
-Laravel, Livewire, Blade, Bootstrap, MySQL, React, REST APIs, SaaS Design
+Laravel, Blade, Bootstrap, MySQL, React, REST APIs, SaaS Design
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hkmt-ali/)
