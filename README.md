@@ -1,61 +1,119 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Hi, I'm Hkmt! 👋
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Mokaab SaaS Platform 🏗️
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-12-red?style=for-the-badge&logo=laravel)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue?style=for-the-badge&logo=mysql)
+![Bootstrap](https://img.shields.io/badge/UI-Bootstrap_5-purple?style=for-the-badge&logo=bootstrap)
+![SaaS](https://img.shields.io/badge/Type-SaaS-green?style=for-the-badge&logo=spring)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Mokaab** is a multi-tenant SaaS platform tailored for **construction material and finishing companies** to showcase their catalogs (menu-style) in a professional and structured way. Each company gets its own subdomain with a personalized menu, allowing them to manage their products, categories, pricing, and branding.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The platform is designed to help companies move away from PDF catalogs and WhatsApp messages, and into a smart, mobile-friendly, centralized system.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🌍 Live Demo
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+👉 [[https://demo.buildify-saas.com/](https://mokaab.eu.org/)]
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Features
 
-## Laravel Sponsors
+- Multi-tenant architecture (each company has its own subdomain and data)
+- Dynamic product catalog with sections (tiles, marble, ceramics, paint, accessories...)
+- Product attributes support (size, color, finish type)
+- Image gallery and spec sheets per product
+- Company-specific branding (logos, cover, contact info)
+- Public mini-website for customers to browse and search
+- Admin panel per company to manage products and settings
+- Super admin panel to manage companies, billing, and global settings
+- Fully responsive mobile-first design
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 📸 Screenshots
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+![Company Home Page](./screenshots/screenshot-home.png)
+![Product Listing](./screenshots/screenshot-products.png)
+![Product Details](./screenshots/screenshot-details.png)
+![Company Admin Panel](./screenshots/screenshot-admin.png)
+![Add Product](./screenshots/screenshot-add-product.png)
+![Super Admin Panel](./screenshots/screenshot-superadmin.png)
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🧱 Tech Stack
 
-## Code of Conduct
+**Frontend:** Blade, Bootstrap 5  
+**Backend:** Laravel 12  
+**Database:** MySQL  
+**Multi-Tenancy:** Single-DB, subdomain-based
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## ✅ Requirements
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- PHP >= 8.2
+- Composer
+- MySQL
+- Node.js & npm
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🧪 Run Locally
+
+Clone the project:
+
+```bash
+  git clone https://github.com/7akoom/buildify.git
+```
+
+Navigate to project directory:
+
+```bash
+    cd buildify
+```
+
+Install dependencies:
+
+```bash
+     composer install
+      npm install
+```
+
+Setup environment:
+
+```bash
+       cp .env.example .env
+      php artisan key:generate
+      php artisan migrate --seed
+```
+
+Start the server:
+
+```bash
+   php artisan serve
+```
+
+## 🔐 Multi-Tenancy Notes
+
+- Companies are created via super admin.
+- Each company is assigned a subdomain like: company1.buildify-saas.com
+- Data is isolated per company using company_id and middleware.
+
+## 👨‍💻 About Me 
+
+[@7akoom](https://www.github.com/7akoom)
+
+I'm Hkmt, a passionate full-stack developer specialized in Laravel and modern JS frameworks. I focus on scalable SaaS solutions with elegant UI/UX for real business needs.
+
+Buildify is my latest project to help construction supply companies digitize their catalogs and streamline their customer experience.
+
+## 🛠 Skills
+Laravel, Livewire, Blade, Bootstrap, MySQL, React, REST APIs, SaaS Design
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hkmt-ali/)
+
