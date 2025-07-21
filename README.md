@@ -15,7 +15,7 @@ The platform is designed to help companies move away from PDF catalogs and Whats
 
 ## 🌍 Live Demo
 
-👉 [[https://demo.buildify-saas.com/](https://mokaab.eu.org/)]
+👉 [https://demo.buildify-saas.com/](https://mokaab.eu.org/)
 
 ---
 
